@@ -5,6 +5,19 @@
   justify-content: center;
   flex-direction: column;
   gap: 20px;
+  .filter {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    select {
+      padding: 10px;
+    }
+    button {
+      padding: 8px 10px;
+      background-color: #000;
+      color: #fff;
+    }
+  }
   .task-board {
     width: 80%;
     max-height: 400px;
