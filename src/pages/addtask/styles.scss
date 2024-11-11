@@ -1,0 +1,36 @@
+.add-task {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-direction: column;
+  .form {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    input {
+      width: 80%;
+      padding: 15px;
+      outline: none;
+      border: 1px solid black;
+      border-radius: 12px;
+    }
+    select {
+      padding: 10px 10px;
+      outline: none;
+      border: none;
+      background-color: #fff;
+    }
+    button {
+      padding: 10px 30px;
+      border: none;
+      background-color: #000;
+      color: #fff;
+      border-radius: 14px;
+    }
+  }
+}

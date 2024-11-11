@@ -1,0 +1,99 @@
+.home {
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  .task-board {
+    width: 80%;
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+  .table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+
+    .complete {
+      padding: 2px 6px;
+      border: 2px solid green;
+      border-radius: 20px;
+    }
+    .pending {
+      padding: 2px 6px;
+      border: 2px solid red;
+      cursor: pointer;
+      border-radius: 20px;
+      &:hover {
+        background-color: red;
+        color: #fff;
+      }
+    }
+
+    th {
+      background-color: #2d2c47;
+      color: #fff;
+      min-width: 90px;
+    }
+    th,
+    td {
+      text-align: left;
+      padding: 8px 10px;
+      p {
+        margin: 5px 0px;
+      }
+      input {
+        padding: 5px;
+        margin-bottom: 8px;
+      }
+      button {
+        padding: 4px;
+        outline: none;
+        border: none;
+        color: #fff;
+        background: #6386ee;
+        margin-left: 6px;
+      }
+    }
+    td {
+      border: 1px solid #ddd;
+    }
+
+    .edit {
+      text-decoration: none;
+      color: #fff;
+      background-color: green;
+      padding: 3px;
+    }
+
+    .delete {
+      border: none;
+      outline: none;
+      background-color: red;
+      color: #fff;
+    }
+
+    .p-section {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    .action-butts {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      button {
+        background-color: rgb(40, 133, 40);
+        &:nth-child(1) {
+          background-color: rgb(182, 31, 31);
+        }
+      }
+    }
+  }
+}
