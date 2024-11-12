@@ -38,7 +38,7 @@ const Home = () => {
     }, [statusValue])
     return (
         <div className='home'>
-            <h1>Souparno's Tasks</h1>
+            <h1>{user.name}'s Tasks</h1>
             <div className="filter">
                 <select onChange={(e) => setStatusValue(e.target.value)}>
                     <option value="default">Select by Status</option>
