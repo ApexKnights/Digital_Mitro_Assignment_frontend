@@ -43,7 +43,7 @@ const Home = () => {
                 <select onChange={(e) => setStatusValue(e.target.value)}>
                     <option value="default">Select by Status</option>
                     <option value="pending"> Pending</option>
-                    <option value="default"> Complete</option>
+                    <option value="complete"> Complete</option>
                 </select>
                 <button onClick={getSearched}>Search</button>
             </div>
